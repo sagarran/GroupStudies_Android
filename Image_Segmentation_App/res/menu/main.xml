@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.imagesegmentation.grabcut.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    
+    
+    <item android:id="@+id/item2" android:title="Help"></item>
+    <item android:id="@+id/item3" android:title="Select Stroke Width">
+        <menu >
+        <group android:id="@+id/group3" android:checkableBehavior="single">
+            <item android:id="@+id/submenu3" android:title="Thin" />
+            <item android:id="@+id/submenu4" android:title="Medium" />
+            <item android:id="@+id/submenu5" android:title="Large" />
+        </group>   
+        </menu>
+        </item>
+    <item android:id="@+id/item4" android:title="Reset"></item>
+    <item android:id="@+id/item6" android:title="Save"></item>
+
+</menu>

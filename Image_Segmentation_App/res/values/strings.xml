@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Image Segmentation</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="desc">Image View</string>
+    <string name="button_FG">FG</string>
+    <string name="button_BG">BG</string>
+    <string name="button_load">Select an image</string>
+    <string name="start">segment</string>
+    <string name="show">Show</string>
+    <string name="help">Help</string>
+    <string name="reset">Reset</string>
+    <string name="next">Next</string>
+	<string name="previous">Previous</string>
+</resources>

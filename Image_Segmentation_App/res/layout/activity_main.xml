@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ss2015.groupstudies.imageSegmentation.MainActivity" >
+    
+    
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="400dp"
+        android:layout_height="350dp"   
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:adjustViewBounds="true"
+        android:layout_gravity = "center"
+        android:src="@android:drawable/ic_menu_gallery" />
+    
+    <ImageView
+	        android:id="@+id/imageViewTransparent"
+	        android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="@+id/imageView"
+        	android:layout_alignParentRight="@+id/imageView"
+        	android:layout_alignParentTop="@+id/imageView"
+        	android:layout_alignBottom="@+id/imageView"
+        	android:contentDescription="@null"
+        	android:adjustViewBounds="true"
+        	android:scaleType="fitXY"
+        	android:layout_centerInParent="true"
+        	android:background="#00000000" />
+    
+    
+		<Button
+	        android:id="@+id/nextBtn"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/next" />
+
+	    
+
+	    <Button
+	        android:id="@+id/prevBtn"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/previous" />
+
+
+	     <Button
+	         android:id="@+id/foreGround"
+	         style="?android:attr/buttonStyleSmall"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentBottom="true"
+	         android:layout_toRightOf="@+id/prevBtn"
+	         android:background="@drawable/tglbtn"
+	         android:text="@string/button_FG" />
+
+	     <Button
+	         android:id="@+id/backGround"
+	         style="?android:attr/buttonStyleSmall"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignBaseline="@+id/foreGround"
+	         android:layout_alignBottom="@+id/foreGround"
+	         android:layout_marginLeft="14dp"
+	         android:layout_toRightOf="@+id/foreGround"
+	         android:background="@drawable/tglbtn"
+	         android:text="@string/button_BG" />
+
+	     <Button
+	         android:id="@+id/loadImage"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentBottom="true"
+	         android:layout_centerHorizontal="true"
+	         android:text="@string/button_load" />
+
+	     <Button
+	         android:id="@+id/erase"
+	         style="?android:attr/buttonStyleSmall"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentBottom="true"
+	         android:layout_alignParentRight="true"
+	         android:text="Erase" />
+
+</RelativeLayout>
+   
